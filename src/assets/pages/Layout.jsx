@@ -20,6 +20,9 @@ const Layout = () =>{
                 <li>
                     <NavLink to="/CrearTickets">Crear Tickets</NavLink>
                 </li>
+                 <li>
+                    <NavLink to="/EnvioMensajes">Envio Mensajes</NavLink>
+                </li>
             </ul>
         </nav>
         
