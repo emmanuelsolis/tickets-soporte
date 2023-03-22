@@ -1,0 +1,25 @@
+*{
+  margin:0;
+}
+.bdy{
+  display: flex;
+  
+}
+.container{
+  background-color: grey;
+  width: 200px;
+  height: 100vh;
+  color: white;
+  nav{
+    ul{
+      
+      li{
+        NavLink{
+          text-decoration: none;
+          color: white;
+        }
+        color: white;
+      }
+    }
+  }
+}
