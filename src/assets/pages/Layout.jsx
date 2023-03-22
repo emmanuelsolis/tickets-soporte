@@ -3,28 +3,31 @@ const Layout = () =>{
     return <div className="bdy">
         <div className='container'>
         <div id='user'>
+        <span class="material-symbols-outlined">
+account_circle
+</span>
         <p>User</p>
       </div>
       <hr />
         <nav>
             <ul>
                 <li>
-                    <NavLink end to="/">Tablero</NavLink>
+                    <NavLink end to="/" className={"text"}>Tablero</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Tickets">Tickets</NavLink>
+                    <NavLink to="/Tickets" className={"text"}>Tickets</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/MisTickets">Mis Tickets</NavLink>
+                    <NavLink to="/MisTickets" className={"text"}>Mis Tickets</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/CrearTickets">Crear Tickets</NavLink>
+                    <NavLink to="/CrearTickets" className={"text"}>Crear Tickets</NavLink>
                 </li>
             </ul>
         </nav>
         
         </div>
-        <Outlet></Outlet>
+        <Outlet className={"page"}></Outlet>
     </div>
 }
 
