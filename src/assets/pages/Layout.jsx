@@ -23,6 +23,9 @@ account_circle
                 <li>
                     <NavLink to="/CrearTickets" className={"text"}>Crear Tickets</NavLink>
                 </li>
+                 <li>
+                    <NavLink to="/EnvioMensajes">Envio Mensajes</NavLink>
+                </li>
             </ul>
         </nav>
         

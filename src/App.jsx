@@ -6,6 +6,7 @@ import MisTickets from './assets/pages/MisTickets';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss'
 import Layout from './assets/pages/Layout';
+import Navbar from './components/Navbar.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function App() {
   return (
     <div>
     <div >
-      
+    <Navbar/>
       <Routes>
         <Route path='/' element={<Layout/>}>
         <Route path='/CrearTickets' element={<CrearTickets/>}> </Route>
