@@ -12,6 +12,7 @@ import "./App.scss";
 import Layout from "./assets/pages/Layout";
 import Navbar from "./componentes/navbar/NavBar.jsx";
 import Footer from "./componentes/footer/Footer";
+import Usuarios from './assets/pages/Usuarios';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
               {" "}
             </Route>
             <Route path="*" element={<Tablero />}>
+              {" "}
+            </Route>
+            <Route path='/Usuarios' element={<Usuarios/>}>
               {" "}
             </Route>
           </Route>
