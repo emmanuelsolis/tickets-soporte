@@ -1,3 +1,7 @@
+
+
+import Home from './assets/pages/Home';
+
 import { useState } from "react";
 import CrearTickets from "./assets/pages/CrearTickets";
 import Tickets from "./assets/pages/Tickets";
@@ -9,11 +13,16 @@ import Layout from "./assets/pages/Layout";
 import Navbar from "./componentes/navbar/NavBar.jsx";
 import Footer from "./componentes/footer/Footer";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
+
+    <div >
+      
+
       <div>
         
             <Navbar />
@@ -28,6 +37,9 @@ function App() {
             <Route path="/MisTickets" element={<MisTickets />}>
               {" "}
             </Route>
+            <Route path="/Home" element={<Home />}>
+              {" "}
+            </Route>
             <Route path="/" element={<Tablero />}>
               {" "}
             </Route>
@@ -38,8 +50,10 @@ function App() {
         </Routes>
             <Footer/>
       </div>
-    </div>
-  );
-}
 
+      </div>
+  
+
+
+</div>)}
 export default App;
