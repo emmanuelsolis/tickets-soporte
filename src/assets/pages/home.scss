@@ -1,0 +1,85 @@
+.base{
+    width: 100%;
+    .wlcm{
+        
+        margin-left: -47px;
+        background-color: #D4D4D4;
+        width: 102%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Abu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: -20px;
+        border-radius: 10px;
+      margin-top:10px;
+        background-color: #D4D4D4;
+        width: 99%;
+        height: 350px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .container1{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .img{
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                margin-right: 10%;
+            }
+        }.container2{
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .img{
+                margin-left: 10%;
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+            }
+        }
+    }
+    .tck{
+        margin-top:10px;
+        margin-left: -20px;
+        border-radius: 10px;
+        
+        background-color: #D4D4D4;
+        width: 99%;
+        height: 350px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        #warn{
+            font-size: 200px;
+        }
+}
+    .cont{
+        margin-top:10px;
+        margin-left: -20px;
+        border-radius: 10px;
+     
+        background-color: #D4D4D4;
+        width: 99%;
+        height: 350px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        #cont{
+            font-size: 200px;
+        }
+    }
+}
+   
