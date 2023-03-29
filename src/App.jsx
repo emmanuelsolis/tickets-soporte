@@ -6,6 +6,7 @@ import MisTickets from './assets/pages/MisTickets';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss'
 import Layout from './assets/pages/Layout';
+import Home from './assets/pages/Home';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path='/CrearTickets' element={<CrearTickets/>}> </Route>
         <Route path='/Tickets' element={<Tickets/>}> </Route>
         <Route path='/MisTickets' element={<MisTickets/>}> </Route>
+        <Route path='/Home' element={<Home/>}> </Route>
         <Route path='/' element={<Tablero/>}> </Route>
         <Route path='*' element={<Tablero/>}> </Route>
         </Route>
