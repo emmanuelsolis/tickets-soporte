@@ -29,6 +29,7 @@ warning
             <span id="cont" class="material-symbols-outlined">
 perm_phone_msg
 </span>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, neque cum in eum accusantium voluptatem enim veniam. Earum perferendis illum, debitis illo sit eligendi quam dolore fugiat quia, impedit blanditiis!</p>
             </section>
         </div>
     </div>

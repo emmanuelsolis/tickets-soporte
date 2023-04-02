@@ -26,6 +26,9 @@ account_circle
                 <li>
                 <NavLink to="/Home" className={"text"}>Home</NavLink>
                 </li>
+                <li>
+                <NavLink to="/AboutUs" className={"text"}>Acerca de ...</NavLink>
+                </li>
             </ul>
         </nav>
         

@@ -13,6 +13,8 @@ import Layout from "./assets/pages/Layout";
 import Navbar from "./componentes/navbar/NavBar.jsx";
 import Footer from "./componentes/footer/Footer";
 import Usuarios from './assets/pages/Usuarios';
+import AboutUs from './assets/pages/AboutUs';
+import MenuLat from './assets/pages/MenuLat';
 
 
 function App() {
@@ -27,31 +29,7 @@ function App() {
       <div>
         
             <Navbar />
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/CrearTickets" element={<CrearTickets />}>
-              {" "}
-            </Route>
-            <Route path="/Tickets" element={<Tickets />}>
-              {" "}
-            </Route>
-            <Route path="/MisTickets" element={<MisTickets />}>
-              {" "}
-            </Route>
-            <Route path="/Home" element={<Home />}>
-              {" "}
-            </Route>
-            <Route path="/" element={<Tablero />}>
-              {" "}
-            </Route>
-            <Route path="*" element={<Tablero />}>
-              {" "}
-            </Route>
-            <Route path='/Usuarios' element={<Usuarios/>}>
-              {" "}
-            </Route>
-          </Route>
-        </Routes>
+            <MenuLat/>
             <Footer/>
       </div>
 
