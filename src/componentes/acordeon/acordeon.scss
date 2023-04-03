@@ -16,14 +16,21 @@ body {
     justify-content: center;
     line-height: 1.5;
 }
+.space {
+    height: 10vh;
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
 .container {
     width: 60%;
     margin: 0 auto;
-
 } 
+ 
+
 .acordeon {
     background: #085391;
-   
 
     &__title {
         padding: 1rem 0.5rem;
