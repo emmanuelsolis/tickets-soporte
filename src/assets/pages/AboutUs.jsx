@@ -21,7 +21,9 @@ const data = [
 function AboutUs() {
   return (
     <div>
-        
+          <div className="space">
+            <h1 className="title">Acerca de nosotros</h1>
+          </div>
           {
             data.map((item, index)=> <div
              key={index}
