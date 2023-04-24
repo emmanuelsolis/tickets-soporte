@@ -8,8 +8,9 @@ import MisTickets from "./MisTickets";
 import { Route, Routes } from "react-router-dom";
 
 import Layout from "./Layout";
-
+import EnvioMensajes from './EnvioMensajes';
 import Usuarios from './Usuarios';
+import UsuarioRegistro from './UsuarioRegistro';
 import AboutUs from './AboutUs';
 
 function MenuLat() {
@@ -41,6 +42,13 @@ function MenuLat() {
             <Route path='/Usuarios' element={<Usuarios/>}>
               {" "}
             </Route>
+            <Route path='/UsuarioRegistro' element={<UsuarioRegistro/>}>
+              {" "}
+            </Route>
+            <Route path='/EnvioMensajes' element={<EnvioMensajes/>}>
+              {" "}
+            </Route>
+
           </Route>
         </Routes>
     </div>

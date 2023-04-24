@@ -1,6 +1,6 @@
 function UsuarioRegistro() {
   return (
-    <div><h1>Registro de Usuarios</h1></div>
+    <div><h1>Registro de Usuarios desde el navbar</h1></div>
   )
 }
-export default UsuarioRegistros
+export default UsuarioRegistro
