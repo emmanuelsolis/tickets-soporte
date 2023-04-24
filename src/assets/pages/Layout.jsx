@@ -1,7 +1,7 @@
 import { Outlet,NavLink } from "react-router-dom"
 const Layout = () =>{
     return <div className="bdy">
-        <div className='container'>
+        <div className='container_latnav'>
         <div id='user'>
         <span class="material-symbols-outlined">
 account_circle
@@ -33,7 +33,9 @@ account_circle
         </nav>
         
         </div>
+        <div className="content-sec">
         <Outlet className={"page"}></Outlet>
+        </div>
     </div>
 }
 
