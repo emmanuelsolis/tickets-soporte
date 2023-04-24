@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import BurguerButton from '../burguer-button/BurguerButton.jsx'
 
@@ -20,6 +21,7 @@ function Navbar() {
             <a onClick={handleClick}  href="/EnvioMensajes">Mensajes</a>
             <a onClick={handleClick} href="/Usuarios">Usuarios</a>
             <a  onClick={handleClick} href="/usuariosRegistro">Registro</a>
+    
         </div>
        
         <div className = "burguer">

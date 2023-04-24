@@ -1,6 +1,11 @@
+import { Formulario } from "../componentes/formulario-registro/Formulario";
 function UsuarioRegistro() {
   return (
-    <div><h1>Registro de Usuarios</h1></div>
+    <div>
+      <h1>Registro de Usuarios</h1>
+      <h1>Hola</h1>
+      <Formulario/>
+    </div>
   )
 }
-export default UsuarioRegistros
+export default UsuarioRegistro
