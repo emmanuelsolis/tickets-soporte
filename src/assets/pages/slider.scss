@@ -1,10 +1,17 @@
 .bdycont{
+
+
     width: 60%;
     height: auto;
    display: flex;
    align-items: center;
    justify-content: center;
     background-color: aliceblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
