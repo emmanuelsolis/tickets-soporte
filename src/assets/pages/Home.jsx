@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="base">
         
-        <div>
+    
             
             <section className="wlcm">
                     <h1>!Bienvenido¡</h1>
@@ -20,18 +20,18 @@ function Home() {
                 </div>
             </section>
             <section className="tck">
-            <span id="warn" class="material-symbols-outlined">
-warning
-</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nisi sequi accusamus, accusantium obcaecati et, officiis sunt ab odit qui laborum eaque pariatur voluptatibus dolor iusto cupiditate? Pariatur, reprehenderit expedita!</p>
+              <span id="warn" class="material-symbols-outlined">
+               warning
+              </span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nisi sequi accusamus, accusantium obcaecati et, officiis sunt ab odit qui laborum eaque pariatur voluptatibus dolor iusto cupiditate? Pariatur, reprehenderit expedita!</p>
             </section>
             <section className="cont">
-            <span id="cont" class="material-symbols-outlined">
-perm_phone_msg
-</span>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, neque cum in eum accusantium voluptatem enim veniam. Earum perferendis illum, debitis illo sit eligendi quam dolore fugiat quia, impedit blanditiis!</p>
+              <span id="cont" class="material-symbols-outlined">
+                perm_phone_msg
+              </span>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, neque cum in eum accusantium voluptatem enim veniam. Earum perferendis illum, debitis illo sit eligendi quam dolore fugiat quia, impedit blanditiis!</p>
             </section>
-        </div>
+        
     </div>
   )
 }
