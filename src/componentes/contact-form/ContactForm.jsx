@@ -6,7 +6,7 @@ import 'semantic-ui-css/semantic.min.css'
 //import emailjs from 'emailjs/brocom';
 
 
-function ContactForm() {
+function contactForm() {
       const formik = useFormik({
       initialValues: {
         name: "",
@@ -101,4 +101,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default contactForm;

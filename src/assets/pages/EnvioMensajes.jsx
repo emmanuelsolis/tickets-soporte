@@ -1,6 +1,9 @@
 
-/* import ContactForm from "../../componentes/contact-form/ContactForm" */
- import {ContactForm} from "../../componentes/contact-form/ContactForm";
+
+/*import ContactForm from "../../componentes/contact-form/ContactForm" */
+ //import {ContactForm} from "../../componentes/contact-form/ContactForm";
+
+ import ContactForm from '../../componentes/contact-form/ContactForm'; 
 
 function EnvioMensajes() {
   return (
