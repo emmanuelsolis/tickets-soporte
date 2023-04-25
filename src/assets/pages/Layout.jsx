@@ -1,7 +1,7 @@
 import { Outlet,NavLink } from "react-router-dom"
 const Layout = () =>{
     return <div className="bdy">
-        <div className='container'>
+        <div className='container_latnav'>
         <div id='user'>
         <span class="material-symbols-outlined">
 account_circle
@@ -23,11 +23,19 @@ account_circle
                 <li>
                     <NavLink to="/CrearTickets" className={"text"}>Crear Tickets</NavLink>
                 </li>
+                <li>
+                <NavLink to="/Home" className={"text"}>Home</NavLink>
+                </li>
+                <li>
+                <NavLink to="/AboutUs" className={"text"}>Acerca de ...</NavLink>
+                </li>
             </ul>
         </nav>
         
         </div>
+        <div className="content-sec">
         <Outlet className={"page"}></Outlet>
+        </div>
     </div>
 }
 
