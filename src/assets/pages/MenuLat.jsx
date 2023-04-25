@@ -1,17 +1,25 @@
-import Home from './Home';
+import Home from '../../assets/pages/Home';
 
-import { useState } from "react";
-import CrearTickets from "./CrearTickets";
-import Tickets from "./Tickets";
-import Tablero from "./Tablero";
-import MisTickets from "./MisTickets";
+import CrearTickets from "../../assets/pages/CrearTickets";
+import Tickets from "../../assets/pages/Tickets";
+import Tablero from "../../assets/pages/Tablero";
+import MisTickets from "../../assets/pages/MisTickets";
 import { Route, Routes } from "react-router-dom";
+
 
 import Layout from "./Layout";
 import EnvioMensajes from './EnvioMensajes';
 import Usuarios from './Usuarios';
 import UsuarioRegistro from './UsuarioRegistro';
 import AboutUs from './AboutUs';
+
+/*
+import Layout from "../../assets/pages/Layout";
+
+import Usuarios from '../../assets/pages/Usuarios';
+import AboutUs from '../../assets/pages/AboutUs';
+*/
+
 
 function MenuLat() {
   return (

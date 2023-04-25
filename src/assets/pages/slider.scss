@@ -1,25 +1,31 @@
 .bdycont{
-    width: 102%;
-    height: 800px;
+    width: 60%;
+    height: auto;
    display: flex;
    align-items: center;
    justify-content: center;
     background-color: aliceblue;
-    
-    margin-left: -23.5px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
 .box{
-    
+    overflow-y: hidden;
     width: 100%;
-    height: 500px;
+    
     display: flex;
     justify-content: center;
     margin: 20px;
-    margin-left: 40px;
+    // margin-left: 40px;
     .carousel{
         position: relative; 
-    width: 80%; 
-    
-    margin: 0 auto;
+    width: 40%; 
+    height: 20%;
+        .image-carousel{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
     }
     
 }

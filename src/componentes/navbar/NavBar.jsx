@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import BurguerButton from '../burguer-button/BurguerButton.jsx'
 
@@ -19,7 +20,10 @@ function Navbar() {
           <div className={`links ${clicked ? 'active' : ''}`}>
             <a onClick={handleClick}  href="/EnvioMensajes">Mensajes</a>
             <a onClick={handleClick} href="/Usuarios">Usuarios</a>
+
             <a  onClick={handleClick} href="/usuarioRegistro">Registro</a>
+    
+
         </div>
        
         <div className = "burguer">
@@ -105,8 +109,8 @@ const NavContainer = styled.nav`
 const BgDiv = styled.div`
   background-color: #222;
   position: absolute;
-  top: -1000px;
-  left: -1000px;
+  top: -100px;
+  left: -100px;
   width: 100%;
   height: 100%;
   z-index: -1;

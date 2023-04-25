@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: #003f47;
+
+}
+.space {
+    height: 10vh;
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
+.container {
+    width: 25%;
+    // margin: 0 auto;
+} 
+ 
+
+.acordeon {
+    background: #085391;
+
+    &__title {
+        padding: 1rem 0.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+            span {
+                transition: 0.3s ease-in-out;
+                color: #fff;
+            }
+    }
+
+    &.active &__icon {
+            span{
+                transform: rotate(180deg);
+            }
+    }
+
+    &__content {
+        padding: 1rem 0.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease-in-out;
+        background-color: #fff;
+        display: none;
+        text-align: justify;
+        color: black;
+    }
+    &.active &__content {
+        padding: 1.5rem 0.5rem;
+        max-height: 9em;
+        display: block;
+        
+    }
+}
