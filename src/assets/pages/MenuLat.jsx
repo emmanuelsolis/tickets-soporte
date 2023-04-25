@@ -5,11 +5,16 @@ import Tickets from "../../assets/pages/Tickets";
 import Tablero from "../../assets/pages/Tablero";
 import MisTickets from "../../assets/pages/MisTickets";
 import { Route, Routes } from "react-router-dom";
+import UsuarioRegistro from './UsuarioRegistro';
 
 import Layout from "../../assets/pages/Layout";
-
+import EnvioMensajes from './EnvioMensajes';
 import Usuarios from '../../assets/pages/Usuarios';
 import AboutUs from '../../assets/pages/AboutUs';
+/* import Layout from "./Layout";
+import Usuarios from './Usuarios';
+import AboutUs from './AboutUs';
+ */
 
 function MenuLat() {
   return (
@@ -40,6 +45,13 @@ function MenuLat() {
             <Route path='/Usuarios' element={<Usuarios/>}>
               {" "}
             </Route>
+            <Route path='/UsuarioRegistro' element={<UsuarioRegistro/>}>
+              {" "}
+            </Route>
+            <Route path='/EnvioMensajes' element={<EnvioMensajes/>}>
+              {" "}
+            </Route>
+
           </Route>
         </Routes>
     </div>

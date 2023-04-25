@@ -1,7 +1,9 @@
+
+import ContactForm from "../../componentes/contact-form/ContactForm"
 function EnvioMensajes() {
   return (
     <div>
-        <h1>Envio de Mensajes</h1>
+        <ContactForm></ContactForm>
     </div>
   )
 }
