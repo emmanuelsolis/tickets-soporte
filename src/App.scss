@@ -2,16 +2,18 @@
   margin:0;
   font-family: 'Inter', sans-serif;
 }
-.body{
+.bdy{
   display: flex;
-  
+  background-color: papayawhip;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .container{
   background-color: grey;
-  width: 200px;
+  width: 25%;
   height: 125v;
   color: white;
-  margin-right: 2%;
 
   #user{
     display: flex;
