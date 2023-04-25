@@ -11,6 +11,7 @@ body {
 
 }
 .space {
+    display: flex;
     height: 10vh;
     margin-top: 2rem;
     text-align: center;
@@ -37,7 +38,7 @@ body {
         font-weight: 600;
         font-size: 1.2rem;
         cursor: pointer;
-        color: #fff;
+        color: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -65,7 +66,7 @@ body {
         background-color: #002F35;
         display: none;
         text-align: justify;
-        color: black;
+        color: #fff;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;

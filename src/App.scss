@@ -3,11 +3,14 @@
   font-family: 'Inter', sans-serif;
 }
 .bdy{
-  background-color: #003f47;
+  display: flex;
+  background-color: papayawhip;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   color: #2b2b2b;
   font-family: roboto;
-display: flex;
  
 }
 .content-sec{
@@ -17,10 +20,9 @@ display: flex;
 
 .container_latnav{
   background-color: grey;
- width: 200px;
-
+  width: 200px;
+  height: 125vh;
   color: white;
-
 min-height:100vh ;
 
   #user{
