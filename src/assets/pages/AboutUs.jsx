@@ -22,7 +22,7 @@ function AboutUs() {
   return (
     <div>
           <div className="space">
-            <h1 className="title">Acerca de nosotros</h1>
+            <h1 stye="color:black;" className="title">Acerca de nosotros</h1>
           </div>
           {
             data.map((item, index)=> <div
@@ -33,7 +33,6 @@ function AboutUs() {
               </div>
             )
           }
-       
         <MyCarousel/>   
     </div>
   )
