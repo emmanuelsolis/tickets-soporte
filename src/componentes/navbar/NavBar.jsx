@@ -22,7 +22,6 @@ function Navbar() {
             <a onClick={handleClick} href="/Usuarios">Usuarios</a>
 
             <a  onClick={handleClick} href="/usuarioRegistro">Registro</a>
-    
 
         </div>
        
