@@ -1,3 +1,4 @@
+/*
 import { useForm } from "react-hook-form";
 
 export function Formulario(props) {
@@ -75,3 +76,4 @@ const { register, handleSubmit } = useForm();
         </div>
     )
 }
+*/
