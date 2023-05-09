@@ -8,30 +8,34 @@
 
 body {
     background-color: #003f47;
+    padding-bottom: 2rem;
+   
 
 }
 .space {
     height: 10vh;
     margin-top: 2rem;
     text-align: center;
-    color: #fff;
+    color: #000000;
     justify-content: center;
+    padding-bottom: 2rem;
 }
-.container {
-    width: 25%;
-    // margin: 0 auto;
+.container__acordeon {
+    width: 60%;
+    margin: 0 auto;
 } 
  
 
 .acordeon {
     background: #085391;
+    
 
     &__title {
         padding: 1rem 0.5rem;
         font-weight: 600;
         font-size: 1.2rem;
         cursor: pointer;
-        color: #fff;
+        color: #ffffff;
         display: flex;
         align-items: center;
         justify-content: space-between;

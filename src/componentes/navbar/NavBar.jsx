@@ -16,7 +16,7 @@ function Navbar() {
     <>
           <NavContainer>
 
-        <h2>Nombre Empresa -  <span>Tickets de servicio </span></h2>
+        <h2>MAPPS  <span>-Tickets de servicio </span></h2>
           <div className={`links ${clicked ? 'active' : ''}`}>
             <a onClick={handleClick}  href="/EnvioMensajes">Mensajes</a>
             <a onClick={handleClick} href="/Usuarios">Usuarios</a>

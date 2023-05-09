@@ -1,77 +1,128 @@
-import { useForm } from "react-hook-form";
+//import React from "react";
+import { Container, Form, Button } from "semantic-ui-react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import "semantic-ui-css/semantic.min.css";
+//import emailjs from 'emailjs/brocom';
 
-export function Formulario(props) {
-    
-const { register, handleSubmit } = useForm();
+function Formulario() {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      phone: "",
+      email: ""
+    },
+    validationSchema: Yup.object({
+      name: Yup.string().required("El nombre es obligatorio"),
 
+      apellido: Yup.string().required("El apellido es obligatorio"),
 
-    return (
-        <div>
-            <h2>Formulario de Registro</h2>
-             <form class="row g-3 needs-validation" novalidate>
-               <div class="col-md-4">
-                 <label for="validationCustom01" class="form-label">First name</label>
-                 <input type="text" class="form-control" id="validationCustom01" value="Mark" required/>
-                 <div class="valid-feedback">
-                   Looks good!
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <label for="validationCustom02" class="form-label">Last name</label>
-                 <input type="text" class="form-control" id="validationCustom02" value="Otto" required/>
-                 <div class="valid-feedback">
-                   Looks good!
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <label for="validationCustomUsername" class="form-label">Username</label>
-                 <div class="input-group">
-                   <span class="input-group-text" id="inputGroupPrepend">@</span>
-                   <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required/>
-                   <div class="invalid-feedback">
-                     Please choose a username.
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-6">
-                 <label for="validationCustom03" class="form-label">City</label>
-                 <input type="text" class="form-control" id="validationCustom03" required/>
-                 <div class="invalid-feedback">
-                   Please provide a valid city.
-                 </div>
-               </div>
-               <div class="col-md-3">
-                 <label for="validationCustom04" class="form-label">State</label>
-                 <select class="form-select" id="validationCustom04" required>
-                   <option selected disabled value="">Choose...</option>
-                   <option>...</option>
-                 </select>
-                 <div class="invalid-feedback">
-                   Please select a valid state.
-                 </div>
-               </div>
-               <div class="col-md-3">
-                 <label for="validationCustom05" class="form-label">Zip</label>
-                 <input type="text" class="form-control" id="validationCustom05" required/>
-                 <div class="invalid-feedback">
-                   Please provide a valid zip.
-                 </div>
-               </div>
-               <div class="col-12">
-                 <div class="form-check">
-                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
-                   <label class="form-check-label" for="invalidCheck">
-                     Agree to terms and conditions
-                   </label>
-                   <div class="invalid-feedback">
-                     You must agree before submitting.
-                   </div>
-                 </div>
-               </div>
-               <div class="col-12">
-                 <button class="btn btn-primary" type="submit">Submit form</button>
-               </div>
-             </form>
-        </div>
-    )
+      email: Yup.string()
+        .email("eMail no es válido")
+        .required("El eMail es obligatorio"),
+      confirmEmail: Yup.string()
+        .oneOf([Yup.ref('email'), null], 'Los correos electrónicos no coinciden')
+        .required('Debes confirmar el correo electrónico'),
+      password: Yup.string()
+        .min(8, "La contraseña debe tener al menos 8 caracteres")
+        .required("La contraseña es requerida"),
+      confirmPassword: Yup.string()
+        .oneOf([Yup.ref("password"), null], "Las contraseñas no coinciden")
+        // El primer argumento de oneOf es un array con los posibles valores permitidos.
+        // En este caso, solo aceptamos el valor del campo "password" o null (en caso de que esté vacío).
+        .required("Debes confirmar la contraseña")
+    }),
+
+    onSubmit: (formData) => {
+      console.log(formData);
+      /*
+      emailjs.sendForm("service_7t8xbj8","template_m7abbmb",{
+        name: formData.name,
+        email: formData.email,
+        asunto: formData.asunto,
+        });
+        */
+      alert("En breve, un asesor se pondra en contacto. Gracias");
+    }
+  });
+
+  return (
+    <Container
+      style={{
+        //height: "100vh",
+        height: "100%",
+        textAlign: "center",
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        justifyContent: "center",
+        backgroundColor: "white"
+      }}
+    >
+      <h1
+        style={{
+          color: "black"
+        }}
+      >
+        Datos de Registro
+      </h1>
+      <Form style={{ width: "30%" }} onSubmit={formik.handleSubmit}>
+        <Form.Input
+          type="text"
+          placeholder="Nombre"
+          name="name"
+          onChange={formik.handleChange}
+          error={formik.errors.name}
+          value={formik.values.name}
+        />
+        <Form.Input
+          type="text"
+          placeholder="Apellido"
+          name="apellido"
+          onChange={formik.handleChange}
+          error={formik.errors.apellido}
+          value={formik.values.apellido}
+        />
+        <Form.Input
+          type="text"
+          placeholder="Correo electrónico"
+          name="email"
+          onChange={formik.handleChange}
+          error={formik.errors.email}
+          value={formik.values.email}
+        />
+        <Form.Input
+          type="text"
+          placeholder="Confirma tu Correo electrónico"
+          name="confirmEmail"
+          onChange={formik.handleChange}
+          error={formik.errors.confirmEmail}
+          value={formik.values.confrimEmail}
+        />
+        <Form.Input
+          type="text"
+          placeholder="Contraseña"
+          name="password"
+          onChange={formik.handleChange}
+          error={formik.errors.password}
+          value={formik.values.password}
+        />
+        <Form.Input
+          type="text"
+          placeholder="Confirma tu Contraseña"
+          name="confirmPassword"
+          onChange={formik.handleChange}
+          error={formik.errors.confirmPassword}
+          value={formik.values.confirmPassword}
+        />
+
+        <Button type="submit">Enviar</Button>
+        <Button type="button" onClick={formik.handleReset}>
+          Limpiar formulario
+        </Button>
+      </Form>
+    </Container>
+  );
 }
+
+export default Formulario;

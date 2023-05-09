@@ -58,7 +58,7 @@ function ContactForm() {
        style={{
         color: "black",
       }}
-      >Formulario de Contacto</h1>
+      >Contáctanos</h1>
       <Form style={{ width:"30%" }} onSubmit={formik.handleSubmit}>
           <Form.Input 
           type="text" 

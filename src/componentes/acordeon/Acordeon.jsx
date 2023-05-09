@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Acordeon = ({ title, content }) => {
   const [active, setActive] = useState(false);
   return (
-    <div className="container">
+    <div className="container__acordeon">
       <div className={`acordeon ${active ? "active" : ""}`}>
         <div className="acordeon__title" onClick={() => setActive(!active)}>
           <span> {title}</span>

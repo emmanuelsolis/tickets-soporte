@@ -1,32 +1,39 @@
-.bdycont{
+.bdycont {
     width: 60%;
     height: auto;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     background-color: aliceblue;
     margin: auto;
-    margin-top: 20px;
-    overflow: hidden;
+    margin-top: 100px;
     margin-bottom: 20px;
-.box{
-    overflow-y: hidden;
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    // margin-left: 40px;
-    .carousel{
-        position: relative; 
-    width: 40%; 
-    height: 20%;
-        .image-carousel{
-           display: flex;
-           align-items: center;
-           justify-content: center;
+
+    .box {
+        overflow-y: visible;
+        width: 60%;
+
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+        // margin-left: 40px;
+        .carousel {
+            position: relative;
+            width: 80%;
+            height: auto;
+
+            .image-carousel {
+                width: 300px;
+                height: 250px;
+                object-fit: cover;
+                // display: flex;
+                align-items: center;
+                justify-content: center;
+                right: 15px;
+            }
         }
+
     }
-    
-}
 }

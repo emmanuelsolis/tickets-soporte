@@ -5,6 +5,7 @@ import './slider.scss';
 function MyCarousel() {
   return (
     <div className='bdycont'>
+      <h1>Algunos de nuestros clientes son:</h1>
     <div className='box'>
     <Carousel autoPlay infiniteLoop showThumbs={false} className="carousel">
         

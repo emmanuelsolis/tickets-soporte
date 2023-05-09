@@ -4,7 +4,7 @@ import MyCarousel from "./Slider"
 
 const data = [
   {
-    title: "Acerca de nosotros:",
+    title: "Conócenos:",
     content:
       "Somos una empresa dedicada al servicio de mantenimiento y restauración de sistemas de CCTV en plantas industriales. Contamos con un equipo de técnicos altamente capacitados y experimentados que se dedican a garantizar el correcto funcionamiento de los sistemas de seguridad de nuestros clientes. Estamos comprometidos en brindar un servicio de alta calidad y en cumplir con las expectativas de nuestros clientes."
   },
@@ -22,7 +22,7 @@ function AboutUs() {
   return (
     <div>
           <div className="space">
-            <h1 className="title">Acerca de nosotros</h1>
+            <h1 stye="color:black;" className="title">Acerca de nosotros</h1>
           </div>
           {
             data.map((item, index)=> <div
@@ -33,7 +33,6 @@ function AboutUs() {
               </div>
             )
           }
-       
         <MyCarousel/>   
     </div>
   )
