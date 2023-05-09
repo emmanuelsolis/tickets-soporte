@@ -64,7 +64,7 @@ function Formulario() {
           color: "black"
         }}
       >
-        Ingresa tus datos para registrarte
+        Datos de Registro
       </h1>
       <Form style={{ width: "30%" }} onSubmit={formik.handleSubmit}>
         <Form.Input
